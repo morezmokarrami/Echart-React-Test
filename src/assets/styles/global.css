@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+     font-family: 'IRANSansWeb';
+     src: local('IRANSansWeb'), url(../fonts/IRANSansWeb.woff2);
+ }
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background-color: #fcfcfc;
+     color: rgba(61, 61, 61, 1);
+     font-family: IRANSansWeb, sans-serif;
+}
+
+.fadeIn {
+     animation: fadeIn .6s ease-in-out;
+ }
+ 
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 1;
+     }
+ }
+
+ .fadeOut {
+     animation: fadeOut .4s ease-in-out;
+ }
+ 
+ @keyframes fadeOut {
+     0% {
+         opacity: 1;
+     }
+     100% {
+         opacity: 0;
+     }
+ }
